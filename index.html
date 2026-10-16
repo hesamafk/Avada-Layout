@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>avada.website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Avada Winery — Layout Study</title>
 </head>
 
 <body>
@@ -17,39 +18,34 @@
         <div class="logo-container">
             <img src="images/winery-logo-white.svg" alt="Logo">
         </div>
-        <div class="cart-box">
-            <div class="cart-icon">
-
-            </div>
-        </div>
+        
     </div>
 
     <header>
         <nav class="navbar">
             <ul class="menu">
                 <li class="menu-item1">
-                    <a href="#">HOME</a>
+                    <a href="#home">HOME</a>
                     <ul class="submenu">
-                        <li><a href="#">HOME ALTERNATE</a></li>
+                        <li><a href="#home">HOME ALTERNATE</a></li>
                     </ul>
                 </li>
-                <li class="menu-item"><a href="#">VINEYARD</a></li>
-                <li class="menu-item"><a href="#">DISTRIBUTORS</a></li>
-                <li class="menu-item"><a href="#">BUY ONLINE</a></li>
-                <li class="menu-item"><a href="#">BLOG</a></li>
-                <li class="menu-item"><a href="#">CONTACT US</a></li>
+                <li class="menu-item"><a href="#vineyard">VINEYARD</a></li>
+                <li class="menu-item"><a href="#contact">DISTRIBUTORS</a></li>
+                <li class="menu-item"><a href="#wines">BUY ONLINE</a></li>
+                <li class="menu-item"><a href="#news">BLOG</a></li>
+                <li class="menu-item"><a href="#contact">CONTACT US</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="first-section">
+    <main>
+    <div class="first-section" id="home">
         <img src="images/hero-background-full-scaled.jpg" alt="">
         <div class="content-overlay">
             <h1>SPECIALIZING IN ONLY</h1>
             <h3>The Finest Wines</h3>
-            <div class="custom-box">
-                SHOP NOW
-            </div>
+            <a class="custom-box" href="#wines">Explore the wines</a>
         </div>
     </div>
 
@@ -58,27 +54,27 @@
     <div class="Third-section">
         <div class="box box1">
             <div class="option">
-                <a href="#">SHOP NOW</a>
+                <a href="#wines">SHOP NOW</a>
             </div>
             <img src="images/blak%20w.png" alt="تصویر 1">
 
         </div>
         <div class="box box2">
             <div class="option">
-                <a href="#">SHOP NOW</a>
+                <a href="#wines">SHOP NOW</a>
             </div>
             <img src="images/white%20w.png" alt="تصویر 2">
         </div>
         <div class="box box3">
             <div class="option">
-                <a href="#">SHOP NOW</a>
+                <a href="#wines">SHOP NOW</a>
             </div>
             <img src="images/rose%20w.png" alt="تصویر 3">
         </div>
     </div>
 
 
-    <div class="fourth-section">
+    <div class="fourth-section" id="wines">
         <div class="centered-content">
             <h1>SPECIALIZING IN ONLY</h1>
             <h3>Selected Bottles</h3>
@@ -110,29 +106,29 @@
             <h2>MONTHLY WINE SAVINGS</h2>
             <h1>Subscribe & Save</h1>
             <h4>By signing up to our monthly mailing list you are welcoming the latest news, wines and savings directly into your inbox.</h4>
-            <div class="input-container">
-                <label>
-                    <input type="text" placeholder="">
-                </label>
-                <a href="#">Subscribe Now</a>
-            </div>
+            <form class="newsletter-form input-container">
+                <label for="newsletter-email">Email address</label>
+                <input id="newsletter-email" type="email" required autocomplete="email" placeholder="you@example.com">
+                <button type="submit">Subscribe now</button>
+                <p class="form-status" role="status">Layout preview · mailing service not connected.</p>
+            </form>
         </div>
     </div>
 
 
 
-    <div class="six-section">
+    <div class="six-section" id="vineyard">
         <div class="container">
             <div class="container-second">
             <h3>FROM VINE TO TABLE</h3>
             <h1>Vineyard Tours</h1>
             <h4>Take the journey with Avada Winery and explore how your favourite tipple goes from seed, to vine, to table and the entire process involved in nurturing flavours, intensity and style.</h4>
-                <a href="#">book your tour now</a>
+                <a href="#contact">book your tour now</a>
             </div>
         </div>
     </div>
 
-<section class="top-container">
+<section class="top-container" id="news">
     <h5>THROUGH THE GRAPEVINE</h5>
     <h2>Recent News</h2>
 </section>
@@ -161,52 +157,49 @@
 
     </div>
     <section class="down-container">
-        <a href="#">read more news</a>
+        <a href="#news">read more news</a>
     </section>
 
-    <footer class="footer">
+    </main>
+    <footer class="footer" id="contact">
         <div class="footer-content">
 
-            <img class="top-image" src=images/winery-logo-white.svg alt="تصویر بالای صفحه">
+            <img class="top-image" src="images/winery-logo-white.svg" alt="تصویر بالای صفحه">
 
             <div class="center-section">
                 <div class="column-left">
 
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">HOME ALTERNATE</a></li>
-                        <li><a href="#">VINEYARD</a></li>
-                        <li><a href="#">DISTRIBUTORS</a></li>
-                        <li><a href="#">BUY ONLINE</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#home">HOME ALTERNATE</a></li>
+                        <li><a href="#vineyard">VINEYARD</a></li>
+                        <li><a href="#contact">DISTRIBUTORS</a></li>
+                        <li><a href="#wines">BUY ONLINE</a></li>
+                        <li><a href="#news">BLOG</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>
-                <div class="column-center">
-                  <ul>
-                      <li><a href="#">CART</a></li>
-                      <li><a href="#">MY ACCOUNT</a></li>
-                      <li><a href="#">PRIVACY POLICY</a></li>
-                      <li><a href="#">TERMS OF SERVICE</a></li>
-                  </ul>
-                </div>
+                <div class="column-center"><p>A winery storefront layout study.<br>Explore the collection, vineyard and journal.</p></div>
                 <div class="column">
 
                     <h1>Subscribe & Save</h1>
-                    <form>
-                        <input type="text" placeholder="">
+                    <form class="newsletter-form">
+                        <label for="footer-email">Email address</label>
+                        <input id="footer-email" type="email" autocomplete="email" required placeholder="you@example.com">
                         <button type="submit">SUBSCRIBE NOW</button>
+                        <p class="form-status" role="status">Mailing service not connected.</p>
                     </form>
                 </div>
             </div>
 
 
-            <img class="bottom-image" src=images/footer-card-logos.png alt="تصویر پایین صفحه">
+            <img class="bottom-image" src="images/footer-card-logos.png" alt="تصویر پایین صفحه">
             <p class="bottom-text">© Copyright 2012 - 2023 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</p>
         </div>
     </footer>
 
 
 
+    <script src="script.js"></script>
 </body>
 </html>

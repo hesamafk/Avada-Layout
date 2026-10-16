@@ -1,0 +1,590 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', 'Montserrat', 'Playfair Display', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    position: relative;
+
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+}
+
+.logo-container {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+    width: 500px;
+    height: 200px;
+}
+
+.logo-container img {
+    width: 220px;
+    height: 280px;
+}
+
+.cart-box {
+    position: absolute;
+    left: 85%;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #FF6365;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: #000;
+}
+
+header {
+    height: 40px;
+    background-color: #45152A;
+    color: #fff;
+    padding: 10px;
+    font-family: Karla;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+
+}
+
+.menu-item {
+    margin-right: 20px;
+    position: relative;
+    font-size: 15px;
+    padding: 25px;
+    bottom: 45%;
+    transition: color 0.8s;
+}
+
+.menu-item a:hover {
+    color: #FF6365;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-item1 {
+    margin-right: 20px;
+    position: relative;
+    font-size: 15px;
+    padding: 25px;
+    bottom: 45%;
+    transition: color 0.8s;
+    text-decoration: none;
+    color: #FF6365;
+}
+
+.menu-item1 a {
+    text-decoration: none;
+    color: #FF6365;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu-item1:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 10px 0;
+}
+
+.submenu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.first-section {
+    position: relative;
+}
+
+.first-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 0;
+
+}
+
+.content-overlay h3 {
+    font-size: 90px;
+    font-family: "Playfair Display";
+
+}
+
+.content-overlay h1 {
+    font-size: 40px;
+    font-family: Montserrat;
+}
+
+.custom-box {
+    padding: 15px;
+    width: 180px;
+    height: 20px;
+    margin: 10px auto;
+    background-color: #620D3A;
+    font-family: Karla;
+
+}
+
+.custom-box:hover {
+    background-color: #FF6365;
+}
+
+.second-section {
+    background-color: #1F0A13;
+    height: 70px;
+    position: relative;
+    margin-top: -5px;
+   
+}
+
+.Third-section{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    left: 15%;
+}
+
+.box {
+    width: 510px;
+    height: 300px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: -3% 1%;
+    position: relative;
+    border-radius: 10%;
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 10px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+.option {
+    position: absolute;
+    bottom: 2%;
+    background-color: #620D3A;
+    color: #fff;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    line-height: 50px;
+    transition: background-color 0.3s;
+    font-family: Karla;
+}
+
+.option a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.option:hover {
+    background-color: #FF6365;
+}
+
+
+.fourth-section {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.centered-content {
+    text-align: center;
+    display: inline-block;
+    margin-top: 7%;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    color: #5C3144;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.image-container img {
+    width: 315px;
+    height: 255px;
+    margin: 5px;
+}
+
+.fifth-section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    background: url("../images/vineyard-hero-background-scaled.jpg")no-repeat center center / cover;
+
+}
+.fifth-section > .container{
+    width: 500px;
+    height: 400px;
+    /*margin: auto auto;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+[type='text']{
+    width: 550px;
+    height: 30px;
+    border-radius: 6%;
+    /*background-color: pink;*/
+}
+.fifth-section > .container > .input-container > a{
+    background-color: #620D3A;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin: 20px auto;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+.fifth-section > .container > .input-container > a:hover{
+    background-color: #FF6365;
+
+}
+
+.fifth-section h2,
+.fifth-section h1,
+.fifth-section h4 {
+    color: white;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    color: #5C3144;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.six-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: url("../images/vineyard-tours-background-scaled.jpg")no-repeat center center / cover;
+
+}
+.six-section > .container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 50%;
+    height: 600px;
+    left: 10%;
+}
+.six-section > .container > .container-second{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    text-align: left;
+    /*height: 200px;*/
+}
+.six-section > .container > .container-second > a{
+    color:white;
+    background-color: #620D3A;
+    width: 150px;
+    height: 30px;
+    margin: 20px auto;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+
+}
+.six-section > .container > .container-second > a:hover{
+    background-color: #FF6365;
+}
+.six-section h1,
+.six-section h3,
+.six-section h4 {
+    color: white;
+    font-family: Montserrat;
+
+}
+
+.top-container{
+    width: 60%;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Montserrat;
+}
+.seven-section{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.seven-section .box {
+    width: 550px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.seven-section option {
+    background-color: #620D3A;
+    color: #5C3144;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-family: Montserrat;
+
+}
+
+.seven-section option a {
+    display: block;
+    width: 100%;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.seven-section option:hover {
+    background-color: #00ff00;
+}
+.down-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.down-container > a{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    color:white;
+    background-color: #620D3A;
+    text-decoration: none;
+}
+
+.down-container > a:hover{
+    background-color: #FF6365;
+}
+.footer {
+    background-image: url("../images/footer-background-scaled.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    height: 700px;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    position: relative;
+}
+
+.top-image {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+}
+
+.center-section {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.column {
+    flex: 1;
+    padding-top: 20%;
+
+}
+
+.column-left {
+    flex: 1;
+    padding-top: 20%;
+}
+
+.column-center {
+    flex: 1;
+    padding-top: 20%;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: Karla;
+}
+
+li>a {
+    text-decoration: none; /* حذف خطوط زیر a ها */
+    color: white; /* رنگ پیشفرض متن a */
+    transition: color 0.5s; /* ایجاد انتقال رنگ در هاور */
+}
+
+li>a:hover {
+    color: #FF6365; /* تغییر رنگ موقع هاور روی a */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Playfair Display";
+}
+
+form {
+    width: 100%;
+    max-width: 200px; /* عرض حداکثر برای فرم */
+    margin: 0 auto;
+    text-align: center; /* تنظیم متن وسط فرم */
+
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    background-color: #620D3A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.bottom-image {
+    position: absolute;
+   top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px;
+    height: 40px;
+}
+
+.bottom-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 200px;
+    color: #555;
+}
+
+
+/* CSS برای تبلت */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* مخفی کردن منو اصلی در تبلت */
+    }
+
+    .header {
+        display: flex; /* نمایش هدر */
+        justify-content: space-between; /* ترتیب منو سمت چپ و هدر */
+    }
+
+    .menu-item {
+        display: inline-block; /* نمایش منو سمت چپ در یک خط */
+    }
+
+    .menu-item1 {
+        display: inline-block; /* نمایش منو سمت چپ در یک خط */
+    }
+}
+
+
+
+.down-container{
+    display: flex;
+    flex-direction: column;
+}
+
